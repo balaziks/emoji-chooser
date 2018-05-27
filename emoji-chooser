@@ -1,0 +1,3 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+python3 emoji/prepare.py | dmenu | python3 emoji/choose.py | xclip
